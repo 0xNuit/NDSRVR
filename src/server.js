@@ -46,7 +46,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports = run;
 } else {
   const run = async () => {
-    const port = 5400;
+    const port = 80;
 
     await mongoose.connect('mongodb+srv://partner:partner@idea.k7t0bow.mongodb.net/?retryWrites=true&w=majority', {
       useNewUrlParser: true,
